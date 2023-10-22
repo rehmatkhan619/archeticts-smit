@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  background-color: #fff;
+  height: 10vh;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  gap: 30px;
+  padding-right: 20px;
+}
+
+.navbar a {
+  font-size: 2vh;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.589);
+  letter-spacing: 0.2em;
+}
+.logo {
+  margin-right: auto;
+  letter-spacing: 0.2em;
+}
+.logo::before {
+  color: #000000;
+  content: "BR";
+  margin-left: 3px;
+  margin-right: 3px;
+  font-weight: 800;
+  font-size: larger;
+  letter-spacing: 0.2em;
+}
+main {
+  height: auto;
+  width: 80vw;
+  margin: auto;
+}
+.big-image {
+  background-image: url(architect.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: 450px;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  display: flex;
+}
+.big-image h1 {
+  background-color: rgba(0, 0, 0, 0.562);
+  width: 50px;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+.big-image p {
+  font-size: larger;
+  color: white;
+  margin-top: 10px;
+  margin-left: 5px;
+  letter-spacing: 0.2em;
+}
+.FlexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  height: 80vh auto;
+  overflow: auto;
+  flex-direction: row;
+}
+
+.FlexContainer div img {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 260px;
+  height: 180px;
+  margin-top: 12px;
+}
+.text-div {
+  text-align: justify;
+  font-size: medium;
+  height: auto;
+  width: 80vw;
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  width: 100%;
+  overflow: auto;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.cards-container div {
+  width: 265px;
+  height: 380px;
+}
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+  width: 265px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-image-1,
+.card-image-2,
+.card-image-3,
+.card-image-4 {
+  width: 100%;
+}
+
+.card-content-1,
+.card-content-2,
+.card-content-3,
+.card-content-4 {
+  background-color: #fff;
+  padding: 10px;
+  position: relative;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.card-title-1,
+.card-title-2,
+.card-title-3,
+.card-title-4 {
+  font-weight: 400;
+  font-size: large;
+  margin: 0;
+}
+
+.card-subtitle-1,
+.card-subtitle-2,
+.card-subtitle-3,
+.card-subtitle-4 {
+  font-weight: 100;
+  font-size: small;
+  margin: 5px 0;
+  color: #666;
+}
+
+.card-paragraph-1,
+.card-paragraph-2,
+.card-paragraph-3,
+.card-paragraph-4 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.card-button-1,
+.card-button-2,
+.card-button-3,
+.card-button-4 {
+  display: block;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: rgb(182, 182, 182);
+  color: #000000b7;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.card-button-1:hover,
+.card-button-2:hover,
+.card-button-3:hover,
+.card-button-4:hover {
+  background-color: #c7ccd3;
+}
+
+form {
+  background-color: #fff;
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #05203d;
+}
+.map {
+  background-image: url(map.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #333;
+  margin-top: 10px;
+  width: 80vw;
+  height: 600px;
+}
+.house1,
+.house2,
+.house3,
+.house4,
+.house5,
+.house6,
+.house7,
+.house8 {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.house-description-1,
+.house-description-5 {
+  position: absolute;
+  top: 15%;
+  left: 22%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.685);
+  color: white;
+  font-size: 16px;
+  padding: 5px;
+}
+.house-description-3,
+.house-description-7 {
+  position: absolute;
+  top: 15%;
+  left: 17%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.685);
+  color: white;
+  font-size: 16px;
+  padding: 5px;
+}
+.house-description-2,
+.house-description-4,
+.house-description-6,
+.house-description-8 {
+  position: absolute;
+  top: 15%;
+  left: 18%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.685);
+  color: white;
+  font-size: 16px;
+  padding: 5px;
+  overflow-x: hidden;
+}
+footer {
+  background-color: #000000;
+  height: 3.1vw;
+  color: white;
+  text-align: center;
+  font-weight: 100;
+  font-size: smaller;
+  margin-top: 5px;
+}
+footer p {
+  margin: auto;
+  padding-top: 10px;
+}
